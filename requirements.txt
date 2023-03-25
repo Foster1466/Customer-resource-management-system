@@ -83,7 +83,7 @@ s3transfer==0.6.0
 scikit-image==0.18.3
 selenium==4.1.2
 simplegeneric==0.8.1
-sip==4.19.13
+sip==6.7.7
 sklearn==0.0
 Sphinx==4.2.0
 sqlparse==0.4.3
