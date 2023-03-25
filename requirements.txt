@@ -1,6 +1,6 @@
 absl-py==1.0.0
 altgraph==0.17.2
-anaconda-navigator==2.3.0
+anaconda-navigator
 appdirs==1.4.4
 argh==0.26.2
 asgiref==3.6.0
