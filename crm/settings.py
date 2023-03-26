@@ -156,6 +156,7 @@ EMAIL_HOST_PASSWORD = ''
 
 
 #S3 Buckets Config
+'''
 AWS_ACCESS_KEY_ID = 'AKIARCTRJ67QS4XJIAPR'
 AWS_SECRET_ACCESS_KEY = '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'
 AWS_STORAGE_BUCKET_NAME = 'jasmeet-crm1-bucket'
@@ -168,4 +169,4 @@ AWS_S3_SIGNATURE_VERSION ='s3v4'
 AWS_S3_REGION_NAME = "us-east-2"
 AWS_S3_HOST = 'us-east-2.amazonaws.com'
 AWS_S3_ADDRESSING_STYLE = "virtual"
-#AWS_S3_ENDPOINT_URL: 'https://sts.us-east-2.amazonaws.com'
+'''
