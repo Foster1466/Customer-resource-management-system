@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     
     'accounts.apps.AccountsConfig',
     'django_filters',
-    'storages',
 ]
 
 MIDDLEWARE = [
@@ -81,7 +80,7 @@ WSGI_APPLICATION = "crm.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
+'''DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": 'demo_1',
@@ -90,16 +89,16 @@ DATABASES = {
         'HOST': 'database-1.cy8f7jiikau7.us-east-2.rds.amazonaws.com',
         'PORT': '5432',
     }
-}
+}'''
 
-'''
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-'''
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -129,10 +128,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = "static/"
 
 MEDIA_URL = '/images/'
+
 '''
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
@@ -155,14 +155,15 @@ EMAIL_HOST_USER = 'jasmeetsingh4263@gmail.com'
 EMAIL_HOST_PASSWORD = ''
 
 
-#S3 Buckets Config
+'''#S3 Buckets Config
 AWS_STORAGE_BUCKET_NAME = 'jasmeet-crm1-bucket'
 
-AWS_S3_FILE_OVERWRITE = False
+#AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
+#DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+#STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
 AWS_S3_SIGNATURE_VERSION ='s3v4'
 AWS_S3_REGION_NAME = "us-east-2"
 AWS_S3_HOST = 'us-east-2.amazonaws.com'
 AWS_S3_ADDRESSING_STYLE = "virtual"
+''' 
